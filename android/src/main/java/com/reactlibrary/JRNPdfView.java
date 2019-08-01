@@ -3,14 +3,14 @@ package com.reactlibrary;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.example.mrzhang.jfpdfdemo.PDFView;
+import com.android.pdfview.AndroidPdfView;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
 
-public class JRNPdfView extends PDFView {
+public class JRNPdfView extends AndroidPdfView {
     /**
      * Construct the initial view
      *
