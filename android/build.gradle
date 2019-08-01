@@ -40,6 +40,6 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    implementation 'com.github.15821959553:PdfView:1.0.2'
+    implementation 'com.github.15821959553:PdfView:1.0.5'
 }
   

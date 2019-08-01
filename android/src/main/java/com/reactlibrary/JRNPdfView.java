@@ -17,7 +17,7 @@ public class JRNPdfView extends AndroidPdfView {
      * @param context
      */
     public JRNPdfView(Context context) {
-        super(context, null);
+        this(context, null);
     }
 
     public JRNPdfView(Context context, AttributeSet set) {
