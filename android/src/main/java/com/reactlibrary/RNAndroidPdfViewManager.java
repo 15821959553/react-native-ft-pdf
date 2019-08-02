@@ -93,6 +93,6 @@ public class RNAndroidPdfViewManager extends SimpleViewManager<JRNPdfView> imple
 
     @Override
     public void onPageError(int page, Throwable t) {
-
+        rnAndroidPdfView.onReceiveErrorNativeEvent(t.getMessage());
     }
 }

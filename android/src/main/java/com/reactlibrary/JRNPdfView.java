@@ -26,11 +26,21 @@ public class JRNPdfView extends AndroidPdfView {
 
     public void onReceiveNativeEvent() {
         WritableMap event = Arguments.createMap();
-        event.putString("message", "MyMessage");
+        event.putString("message", "loadComplete");
         ReactContext reactContext = (ReactContext)getContext();
         reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(
                 getId(),
                 "loadComplete",
                 event);
+    }
+
+    public void onReceiveErrorNativeEvent(String message) {
+        WritableMap event = Arguments.createMap();
+        event.putString("message", message);
+        ReactContext reactContext = (ReactContext)getContext();
+        reactContext.getJSModule(RCTEventEmitter.class).receiveEvent(
+            getId(),
+            "loadError",
+            event);
     }
 }
